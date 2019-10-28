@@ -8,18 +8,17 @@ time_table_drop = "DROP TABLE IF EXISTS time"
 
 # CREATE TABLES
 
-songplay_table_create = (""" CREATE TABLE IF NOT EXISTS songplays (songplay_id SERIAL PRIMARY KEY, start_time bigint REFERENCES time(start_time) ON DELETE RESTRICT,\
-user_id int REFERENCES users(user_id) ON DELETE RESTRICT, level varchar, song_id varchar REFERENCES songs(song_id) ON DELETE RESTRICT,\
-artist_id varchar REFERENCES artists(artist_id) ON DELETE RESTRICT,\
-session_id int , location varchar, user_agent varchar) """)
+songplay_table_create = (""" CREATE TABLE IF NOT EXISTS songplays (songplay_id SERIAL PRIMARY KEY, start_time bigint ,\
+user_id int , level varchar, song_id varchar , artist_id varchar , session_id int , location varchar, user_agent varchar) """)
 
-user_table_create = (""" CREATE TABLE IF NOT EXISTS users (user_id int PRIMARY KEY, first_name varchar, last_name varchar, gender varchar, level varchar)""")
+user_table_create = (""" CREATE TABLE IF NOT EXISTS users (user_id int, first_name varchar, last_name varchar, gender varchar, level varchar)""")
 
-song_table_create = (""" CREATE TABLE IF NOT EXISTS songs (song_id varchar PRIMARY KEY, title varchar, artist_id varchar, year int, duration double precision)""")
+song_table_create = (""" CREATE TABLE IF NOT EXISTS songs (song_id varchar, title varchar,\
+artist_id varchar, year int, duration double precision)""")
 
-artist_table_create = (""" CREATE TABLE IF NOT EXISTS artists (artist_id varchar PRIMARY KEY REFERENCES artists(artist_id) ON DELETE RESTRICT, name varchar, location varchar, latitude double precision, longitude double precision)""")
+artist_table_create = (""" CREATE TABLE IF NOT EXISTS artists (artist_id varchar, name varchar, location varchar, latitude double precision, longitude double precision)""")
 
-time_table_create = (""" CREATE TABLE IF NOT EXISTS time (start_time bigint PRIMARY KEY, hour int, day int, week int, month int, year int, weekday int)""")
+time_table_create = (""" CREATE TABLE IF NOT EXISTS time (start_time bigint, hour int, day int, week int, month int, year int, weekday int)""")
 
 # INSERT RECORDS
 
