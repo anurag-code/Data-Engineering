@@ -1,3 +1,9 @@
+"""
+etl.py defines necessary functions, which helps us in extracting the raw data from the json files,
+process the extracted raw data and then load it into the data warehouse.
+
+"""
+
 import os
 import glob
 import psycopg2
@@ -5,11 +11,28 @@ import pandas as pd
 from sql_queries import *
 import numpy as np
 
+
+"""
+In our functions below we are trying to insert the dataframe into  postgres DB but it will fail if we do not  convert
+the existing datatype in the the dataframe 'numpy.int64' to the pyscop2 compatible.
+Therefore, from psycopg2.extensions, register_adapter and AsIs have been imported.
+"""
 from psycopg2.extensions import register_adapter, AsIs
 psycopg2.extensions.register_adapter(np.int64, psycopg2._psycopg.AsIs)
 
 
+
 def process_song_file(cur, filepath):
+    """
+    Processes the raw data of song_data file.
+    
+    This function processes the raw song_data file: extracts the data , process it and then loads it into the two
+    tables (songs and artists).
+    
+    Parameters:
+        cur: a database cursor.
+        filepath: a string filepath.
+    """
     # open song file
     df = pd.read_json(filepath,lines=True)
 
@@ -23,6 +46,16 @@ def process_song_file(cur, filepath):
 
 
 def process_log_file(cur, filepath):
+    """
+    Processes the raw data of log_data file.
+    
+    This function processes the raw log_data file: extracts the data , process it and then loads it into the three
+    tables (time, user and songplay).
+    
+    Parameters:
+        cur: a database cursor.
+        filepath: a string filepath.
+    """
     # open log file
     df = pd.read_json(filepath, lines=True)
 
@@ -66,6 +99,15 @@ def process_log_file(cur, filepath):
 
 
 def process_data(cur, conn, filepath, func):
+    """
+    Function to get the file paths of raw data and processing of raw data using 
+    aforementioned functions (process_song_file, process_log_file).
+    Parameters:
+        cur: database cursor.
+        conn: database connection.
+        filepath: string filepath to song_data or log_data
+        func: function names of the functions defined above (process_song_file, process_log_file)
+    """
     # get all files matching extension from directory
     all_files = []
     for root, dirs, files in os.walk(filepath):
@@ -85,6 +127,11 @@ def process_data(cur, conn, filepath, func):
 
 
 def main():
+    """
+    Creates object conn to connect to the database.
+    Opens a cursor object (cur) to perform database operations.
+    Processes the data using afore-mentioned function process_data() .
+    """
     conn = psycopg2.connect("host=127.0.0.1 dbname=sparkifydb user=student password=student")
     cur = conn.cursor()
 
