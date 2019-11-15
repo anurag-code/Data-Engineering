@@ -1,4 +1,4 @@
-### Data Engineering Udacity
+### Data Engineering 
 
 ##### It has several projects as a part of Data Engineering Nanodgree. 
 
@@ -6,4 +6,5 @@
  
 ###### Project 1 : Data Modelling and Warehousing with Postgres
 ###### Project 2 : Data Modelling with Apache Cassandra
+###### Project 3 : Data Warehousing with AWS
 
