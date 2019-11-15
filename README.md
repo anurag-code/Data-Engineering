@@ -1,4 +1,4 @@
-### Data Engineering Udacity
+### Data Engineering 
 
 ##### It has several projects as a part of Data Engineering Nanodgree. 
 
