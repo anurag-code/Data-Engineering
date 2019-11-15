@@ -16,7 +16,11 @@ Sparkify want their data to be organised in such a way  that it can be queried a
 Organised the data in the form of a Postgres database with the tables following the star schema format. Star Schema is easy to understand, query, and maintain.
 
 ### Star Schema
-![Schema!](StarSchema.PNG)
+
+
+![Tmage of Schema](https://github.com/anurag-code/Data-Engineering-Udacity/blob/master/PostgreSql/StarSchema.png)
+
+
 
 Fact Table: songplays
 
@@ -28,11 +32,14 @@ The first column (Refer Schema image) in each of the dimension tables is the pri
 
 #### Raw Data
 Data from Sparkify is stored in the form of Json files. It is divided into two sets of folders:
+
 1. songs meta data (folder name : song_data)
-![songs meta data!](Songs_meta_data_json_files.PNG)
+
+![Image of Songs meta data](https://github.com/anurag-code/Data-Engineering-Udacity/blob/master/PostgreSql/Songs_meta_data_json_files.png)
 
 2. user activity data (folder name: log_data)
-![user activity log data!](User_activity_json_files.PNG)
+
+![user activity log data!](https://github.com/anurag-code/Data-Engineering-Udacity/blob/master/PostgreSql/User_activity_json_files.png)
 
 
 #### Processed Dataframes
@@ -40,10 +47,13 @@ The data was extracted from the json files and converted into two dataframes
 song dataframe and log dataframe.
 
 1. Song dataframe
-![song dataframe](song_data.PNG)
+
+![song dataframe](https://github.com/anurag-code/Data-Engineering-Udacity/blob/master/PostgreSql/song_data.png)
+
 
 2. Log dataframe
-![log dataframe](Log_data.PNG)
+
+![log dataframe](https://github.com/anurag-code/Data-Engineering-Udacity/blob/master/PostgreSql/Log_data.png)
 
 
 #### Python Files
