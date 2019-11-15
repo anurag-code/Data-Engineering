@@ -6,5 +6,5 @@
  
 ###### Project 1 : Data Modelling and Warehousing with Postgres
 ###### Project 2 : Data Modelling with Apache Cassandra
-###### Project 3 : Data Warehousing
+###### Project 3 : Data Warehousing with AWS
 
