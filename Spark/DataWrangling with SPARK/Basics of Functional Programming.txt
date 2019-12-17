@@ -1,0 +1,5 @@
+1.    Most important Article.
+      https://www.freecodecamp.org/news/an-introduction-to-the-basic-principles-of-functional-programming-a2c2a15c84/
+
+2.    Good Article. Read only after Reading 1st article.
+      https://stackabuse.com/functional-programming-in-python/
