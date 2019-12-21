@@ -1,4 +1,4 @@
-Basics of Functional Programming
+Basics of Functional Programming and Spark
 To understand Spark it is imperative to understand the basics of Functional Programming.
 
 1.    Most important Article.
