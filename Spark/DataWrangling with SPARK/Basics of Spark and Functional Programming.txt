@@ -1,0 +1,16 @@
+Basics of Functional Programming and Spark
+To understand Spark it is imperative to understand the basics of Functional Programming.
+
+1.    Most important Article.
+      https://www.freecodecamp.org/news/an-introduction-to-the-basic-principles-of-functional-programming-a2c2a15c84/
+
+2.    Good Article. Read only after Reading 1st article.
+      https://stackabuse.com/functional-programming-in-python/
+
+3.    Why should we use SparSession in place of SparkContext post Spark 2.0?
+      3.1 https://blog.knoldus.com/spark-why-should-we-use-sparksession/
+      3.2 https://www.quora.com/What-is-the-difference-between-spark-context-and-spark-session
+      
+      
+4.    Pyspark:
+      https://spark.apache.org/docs/2.4.0/api/python/pyspark.sql.html#pyspark.sql.SparkSession
