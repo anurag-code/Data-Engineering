@@ -1,7 +1,7 @@
 Basics of Functional Programming
 To understand Spark it is imperative to understand the basics of Functional Programming.
 
-1.    Most important Article.
+1.    Important Article on Functional Programming
       https://www.freecodecamp.org/news/an-introduction-to-the-basic-principles-of-functional-programming-a2c2a15c84/
 
 2.    Good Article. Read only after Reading 1st article.
