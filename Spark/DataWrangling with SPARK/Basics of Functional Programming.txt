@@ -6,3 +6,6 @@ To understand Spark it is imperative to understand the basics of Functional Prog
 
 2.    Good Article. Read only after Reading 1st article.
       https://stackabuse.com/functional-programming-in-python/
+
+3.    Link to download book on Spark:
+      http://index-of.co.uk/Big-Data-Technologies/Learning%20Spark%20%20Lightning-Fast%20Big%20Data%20Analysis%20.pdf
