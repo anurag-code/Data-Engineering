@@ -1,4 +1,4 @@
-Basics of Functional Programming and Spark
+Basics of Functional Programming, Spark, and Dataframe Operations in Spark.
 To understand Spark it is imperative to understand the basics of Functional Programming.
 
 1.    Most important Article.
