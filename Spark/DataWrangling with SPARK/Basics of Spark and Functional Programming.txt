@@ -14,3 +14,7 @@ To understand Spark it is imperative to understand the basics of Functional Prog
       
 4.    Pyspark:
       https://spark.apache.org/docs/2.4.0/api/python/pyspark.sql.html#pyspark.sql.SparkSession
+    
+
+5.    DataFrame and Operations in Pyspark:
+      https://www.analyticsvidhya.com/blog/2016/10/spark-dataframe-and-operations 
