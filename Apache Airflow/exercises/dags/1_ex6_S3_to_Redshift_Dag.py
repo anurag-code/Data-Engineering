@@ -32,7 +32,7 @@ create_table = PostgresOperator(
     dag=dag,
     postgres_conn_id="redshift",
     sql=sql_statements.CREATE_TRIPS_TABLE_SQL
-)
+ )
 
 copy_task = PythonOperator(
     task_id='load_from_s3_to_redshift',
