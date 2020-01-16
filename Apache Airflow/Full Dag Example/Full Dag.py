@@ -1,7 +1,7 @@
 # PART 1: Here is a Building of a Full DAG Pipeline
 # PART 2: Custom Operator 
 
-#------------------PART 1 : DAG Pipe Line Creation -----------------------------
+#------------------PART 1 : DAG PipeLine Creation -----------------------------
 import datetime
 
 from airflow import DAG
