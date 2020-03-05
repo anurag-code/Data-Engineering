@@ -9,3 +9,4 @@
 ###### Project 3 : Data Warehousing with AWS
 ###### Project 4 : Data Lake with Apache Spark
 ###### Project 5 : Data Pipeline with Apache Airflow
+###### Project 6 : Capstone Project
